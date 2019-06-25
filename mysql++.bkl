@@ -60,10 +60,8 @@
   </if>
 
   <if cond="BUILDLIBRARY=='yes'">
-    <dll id="mysqlpp">
-      <dllname>mysqlpp$(DEBUG_SUFFIX)</dllname>
+    <lib id="mysqlpp">
       <libname>mysqlpp$(DEBUG_SUFFIX)</libname>
-      <so_version>3.2.4</so_version>
 
       <sources>
         lib/beemutex.cpp
@@ -150,7 +148,7 @@
              tarball, Fink, etc., inferring preference from use of Xcode. -->
         <lib-path>/usr/local/mysql/lib</lib-path>
       </if>
-    </dll>
+    </lib>
 
     <data-files>
       <files>lib/*.h</files>
